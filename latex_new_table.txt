@@ -1,0 +1,9 @@
+
+ \begin{table}
+  \begin{tabular}{lccc}
+    \hline
+    \hline
+
+    \hline
+  \end{tabular}
+ \end{table}

@@ -1,0 +1,18 @@
+IQUADS_ROOT	= /home/wh288/iquads/
+IQUADS_SRC	= $(IQUADS_ROOT)/src/
+IQUADS_BIN	= $(IQUADS_ROOT)/bin/
+CC		= gcc
+CXX		= g++
+CFLAGS		= -I$(IQUADS_SRC)
+CHEADS		=
+CSRCS		=
+COBJS		= $(CSRCS.cpp=.o)
+LIBS		=
+PGM		=
+
+$(PGM):	$(COBJS)
+	$(CXX) -o $(PGM) $(CFLAGS) $(COPT) $(COBJS) $(LIBS)
+	cp $(PGM) $(IQUADS_BIN)
+
+clean:
+	rm *.o; rm $(PGM); rm $(IQUADS_BIN)/$(PGM)
