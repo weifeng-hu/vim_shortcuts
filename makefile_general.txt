@@ -40,3 +40,8 @@ $(target):	$(target_objs)
 
 clean:
 	rm *.o; rm $(target)
+
+#pattern rules
+
+%.o:	%.cpp
+	$(cxx) -c $(cxxflags) $(cxxinclude) $< -o $@
