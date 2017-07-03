@@ -1,0 +1,28 @@
+command Cfori :normal i for( size_t i = istart; i < iend; i++ ){ <ESC>o<ESC>o /* to be defined */ <ESC>o<ESC>o }
+command Cforj :normal i for( size_t j = jstart; j < jend; j++ ){ <ESC>o<ESC>o /* to be defined */ <ESC>o<ESC>o }
+command Cfork :normal i for( size_t k = kstart; k < kend; k++ ){ <ESC>o<ESC>o /* to be defined */ <ESC>o<ESC>o }
+command Cforl :normal i for( size_t l = lstart; l < lend; l++ ){ <ESC>o<ESC>o /* to be defined */ <ESC>o<ESC>o }
+command Cusn    :normal iusing namespace  ;
+command Cmain   :normal iint main( int argc, char* argv[] )<ESC>o{<ESC>o<ESC>o /* to be defined */ <ESC>o<ESC>o}
+command Cmainleet   :normal i#include "../leetcode.hpp"<ESC>o<ESC>oint main( int argc, char* argv[] ) {<ESC>o<ESC>o  Solution solution;<ESC>o<ESC>o  return 0; <ESC>o<ESC>o}
+command Cvi     :normal i vector<int>  ;
+command Cvd     :normal i vector<double>  ;
+command Cvs     :normal i vector<std::string>  ;
+command Cts     :normal i this->
+
+command Cincsio :normal i#include <stdio.h>
+command Cincsl  :normal i#include <stdlib.h>
+command Cincm   :normal i#include <cmath>
+command Cincstr :normal i#include <string>
+command Cincvec :normal i#include <vector>
+command Cincio  :normal i#include <iostream>
+command Cincf   :normal i#include <fstream>
+
+command Ctbi    :normal i/* to be implemented */
+
+command Ccmtcpp :r ~/.vim/cpp_comment_head.txt
+command Cgpl :0r ~/.vim/gpl.txt
+command Cgplf :0r ~/.vim/gplf.txt
+command Cgplpy :0r ~/.vim/gplpy.txt
+command Cmakefileg :0r ~/.vim/makefile_general.txt
+command Cmakefileleet :0r ~/.vim/makefile_leetcode.txt
